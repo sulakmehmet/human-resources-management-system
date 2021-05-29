@@ -1,7 +1,5 @@
 package kodlamaio.hrms.entities.concretes;
 
-import java.util.Date;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -17,7 +15,7 @@ import lombok.NoArgsConstructor;
 @Table(name = "jobeekers")
 @AllArgsConstructor
 @NoArgsConstructor
-public class Jobseeker {
+public class Jobseeker extends User {
 	
 	@Id
 	@GeneratedValue()
@@ -34,5 +32,5 @@ public class Jobseeker {
 	private String identityNumber;
 	
 	@Column(name = "year_of_birth")
-	private Date yearOfBirth;
+	private int yearOfBirth;
 }

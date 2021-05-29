@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 @Table(name = "employers")
 @AllArgsConstructor
 @NoArgsConstructor
-public class Employer {
+public class Employer extends User {
 	
 	@Id
 	@GeneratedValue
